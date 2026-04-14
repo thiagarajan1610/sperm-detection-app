@@ -14,7 +14,7 @@ import os
 # --------------------------------------------
 @st.cache_resource
 def load_model():
-    model_path = r"best.pt"
+    model = YOLO("best.pt")
     return YOLO(model_path)
 
 model = load_model()
